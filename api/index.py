@@ -1,8 +1,6 @@
-import os
-import time
-import random
-from flask import Flask, request,jsonify,send_from_directory
-from werkzeug.utils import secure_filename
+from flask import Flask
+
+app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
