@@ -7,12 +7,6 @@ from werkzeug.utils import secure_filename
 from mp3 import compress_audio_mp3
 from ogg import compress_audio_ogg
 
-app = Flask(__name__)
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'wav', 'mp4', 'jpg'}
 
@@ -49,7 +43,7 @@ def validate_file(request):
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World asdsad!</p>"
+    return "<p>Hello, World dedede!</p>"
 
 @app.route("/download_file/<filename>")
 def download_file(filename):
