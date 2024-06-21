@@ -4,6 +4,9 @@ import random
 from flask import Flask, request,jsonify,send_from_directory
 from werkzeug.utils import secure_filename
 
+from mp3 import compress_audio_mp3
+from ogg import compress_audio_ogg
+
 app = Flask(__name__)
 
 @app.route("/")
