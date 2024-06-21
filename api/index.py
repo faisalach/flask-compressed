@@ -3,7 +3,7 @@ import time
 import random
 from flask import Flask, request,jsonify,send_from_directory
 from werkzeug.utils import secure_filename
-from pydub import AudioSegment
+#from pydub import AudioSegment
 
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'wav', 'mp4', 'jpg'}
